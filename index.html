@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
+    <!-- Include the Adobe Fonts embed code -->
+    <link rel="stylesheet" href="https://use.typekit.net/zsu8yvo.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: transparent;
+            margin: 0;
+            font-family: 'ivy-presto-display', serif;
+        }
+
+        .wave-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .wave-text {
+            display: flex;
+            font-size: 3rem;
+            color: #002FA7;
+            margin: -5px 0;
+            font-family: 'gambado-sans-forte', sans-serif;
+        }
+
+        .wave {
+            display: inline-block;
+            animation: wave-animation 1s infinite;
+        }
+
+        .wave:nth-child(1) { animation-delay: 0s; }
+        .wave:nth-child(2) { animation-delay: 0.1s; }
+        .wave:nth-child(3) { animation-delay: 0.2s; }
+        .wave:nth-child(4) { animation-delay: 0.3s; }
+        .wave:nth-child(5) { animation-delay: 0.4s; }
+        .wave:nth-child(6) { animation-delay: 0.5s; }
+        .wave:nth-child(7) { animation-delay: 0.6s; }
+
+        @keyframes wave-animation {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        .coming-soon {
+            margin-top: 120px;
+            font-size: 2rem;
+            color: #002FA7;
+            font-family: 'ivy-presto-display', serif;
+            text-transform: lowercase;
+        }
+
+        .dot {
+            display: inline-block;
+            animation: dots-animation 1s infinite steps(1, end);
+        }
+
+        .dot:nth-child(1) { animation-delay: 0s; }
+        .dot:nth-child(2) { animation-delay: 0.3s; }
+        .dot:nth-child(3) { animation-delay: 0.6s; }
+
+        @keyframes dots-animation {
+            0%, 100% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wave-container">
+        <div class="wave-text">
+            <span class="wave">b</span>
+            <span class="wave">y</span>
+            <span class="wave">B</span>
+            <span class="wave">r</span>
+            <span class="wave">i</span>
+            <span class="wave">c</span>
+            <span class="wave">.</span>
+        </div>
+        <div class="wave-text">
+            <span class="wave">b</span>
+            <span class="wave">y</span>
+            <span class="wave">B</span>
+            <span class="wave">r</span>
+            <span class="wave">i</span>
+            <span class="wave">c</span>
+            <span class="wave">.</span>
+        </div>
+        <div class="wave-text">
+            <span class="wave">b</span>
+            <span class="wave">y</span>
+            <span class="wave">B</span>
+            <span class="wave">r</span>
+            <span class="wave">i</span>
+            <span class="wave">c</span>
+            <span class="wave">.</span>
+        </div>
+    </div>
+    <div class="coming-soon">
+        coming soon<span class="dot">.</span><span class="dot">.</span><span class="dot">.</span>
+    </div>
+</body>
+</html>
